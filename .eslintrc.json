@@ -1,0 +1,49 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-hooks",
+    "sort-imports-es6-autofix"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "sort-imports-es6-autofix/sort-imports-es6": [2, {
+      "ignoreCase": false,
+      "ignoreMemberSort": false,
+      "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+    }],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error", {
+      "vars": "all",
+      "args": "after-used",
+      "ignoreRestSiblings": false
+    }]
+  },
+  "globals": {
+    "React": "writable"
+  }
+}

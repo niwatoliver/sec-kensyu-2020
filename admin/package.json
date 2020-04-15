@@ -1,0 +1,12 @@
+{
+  "name": "admin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "firebase-admin": "^8.10.0"
+  },
+  "private": true
+}
